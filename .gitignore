@@ -1,0 +1,5 @@
+# Project exclude paths
+/book_static/target/
+/HelloServlet/target/
+/target/
+/Xml-Test/target/

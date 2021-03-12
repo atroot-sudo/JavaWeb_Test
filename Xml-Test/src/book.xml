@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<books>
+    <book sn="SN121">
+        <name>java</name>
+        <price>9.8</price>
+        <author>张三</author>
+    </book><book sn="SN121">
+        <name>java1</name>
+        <price>9.9</price>
+        <author>张三</author>
+    </book><book sn="SN121">
+        <name>java2</name>
+        <price>10.0</price>
+        <author>张三</author>
+    </book>
+</books>
