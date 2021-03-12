@@ -5,27 +5,40 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
+/**
+ * Servlet的生命周期
+ * 1.执行Servlet构造器
+ * 2.执行init初始化方法
+ * 3.执行service方法
+ * 4.执行destroy销毁方法
+ */
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class HelloServlet  implements Servlet {
+public class HelloServlet extends HttpServlet  implements Servlet  {
     private String message;
+
+    public HelloServlet() {
+        System.out.println("1.构造器被调用");
+    }
 
     public void init() {
         message = "Hello World!";
     }
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
+    public void doGet()  {
 
+        message = "this is a Get request.";
+        System.out.println(message);
+    }
+    public void doPost() throws IOException {
+
+        message = "this is a Post request.";
         // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
+        System.out.println(message);
     }
 
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
-
+        System.out.println("2.init初始化");
     }
 
     @Override
@@ -42,7 +55,14 @@ public class HelloServlet  implements Servlet {
      */
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
-        System.out.println(" hello servlet");
+        HttpServletRequest httpServlet = (HttpServletRequest) servletRequest;
+        String method = httpServlet.getMethod();
+        if ("GET".equals(method)){
+            doGet();
+        }else if ("POST".equals(method)){
+            doPost();
+        }
+        System.out.println("3. hello servlet");
     }
 
     @Override
@@ -51,5 +71,6 @@ public class HelloServlet  implements Servlet {
     }
 
     public void destroy() {
+        System.out.println("4.销毁方法执行");
     }
 }

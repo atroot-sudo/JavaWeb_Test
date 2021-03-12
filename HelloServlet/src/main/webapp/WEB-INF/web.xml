@@ -11,17 +11,25 @@
     <servlet-name>HelloServlet</servlet-name>
 <!--    这里的servlet-class是 servlet程序的全类名-->
     <servlet-class>com.theoldzheng.HelloServlet.HelloServlet</servlet-class>
-
 </servlet>
 <!--servlet-mapping 是为了给servlet程序配置访问地址-->
     <servlet-mapping>
 <!--        servlet-name 是为了告知Tomcat服务器，改配置要用于哪个Servlet程序使用-->
         <servlet-name>HelloServlet</servlet-name>
 <!--        url-pattern标签用于配置访问地址-->
-        <url-pattern>/test</url-pattern>
+        <url-pattern>/hello</url-pattern>
 <!--        / 表示,定位到当前工程目录-->
 <!--        /abc -> 表示定位到 localhost:8080/工程目录/abc-->
 <!--这里要注意的是，当定义了标签进行访问时，那么这里定义将不会对标签产生作用-->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HelloServlet2</servlet-name>
+        <servlet-class>com.theoldzheng.HelloServlet.HelloServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet2</servlet-name>
+        <url-pattern>/hello2</url-pattern>
     </servlet-mapping>
 
 </web-app>
