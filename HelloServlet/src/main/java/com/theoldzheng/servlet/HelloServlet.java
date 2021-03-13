@@ -1,9 +1,10 @@
-package com.theoldzheng.HelloServlet;
+package com.theoldzheng.servlet;
 
-import java.io.*;
 import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 
 /**
  * Servlet的生命周期
@@ -13,22 +14,19 @@ import javax.servlet.annotation.*;
  * 4.执行destroy销毁方法
  */
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
-public class HelloServlet extends HttpServlet  implements Servlet  {
+public class HelloServlet extends HttpServlet implements Servlet {
     private String message;
 
     public HelloServlet() {
         System.out.println("1.构造器被调用");
     }
 
-    public void init() {
-        message = "Hello World!";
-    }
-
-    public void doGet()  {
+    public void doGet() {
 
         message = "this is a Get request.";
         System.out.println(message);
     }
+
     public void doPost() throws IOException {
 
         message = "this is a Post request.";
@@ -36,6 +34,13 @@ public class HelloServlet extends HttpServlet  implements Servlet  {
         System.out.println(message);
     }
 
+    /**
+     * ServletConfig、ServletContext对象都是由 服务器Tomcat创建的
+     * <p>
+     * 1.servletConfig 用来获取servlet程序的别名即 servlet-name的值
+     * 2.获取初始化参数init-param的值
+     * 3.获取servletContext对象
+     */
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
         System.out.println("2.init初始化");
@@ -48,18 +53,14 @@ public class HelloServlet extends HttpServlet  implements Servlet  {
 
     /**
      * 该方法主要来处理请求和响应的方法的
-     * @param servletRequest
-     * @param servletResponse
-     * @throws ServletException
-     * @throws IOException
      */
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         HttpServletRequest httpServlet = (HttpServletRequest) servletRequest;
         String method = httpServlet.getMethod();
-        if ("GET".equals(method)){
+        if ("GET".equals(method)) {
             doGet();
-        }else if ("POST".equals(method)){
+        } else if ("POST".equals(method)) {
             doPost();
         }
         System.out.println("3. hello servlet");
