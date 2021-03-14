@@ -9,6 +9,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/HelloServlet/pom.xml" />
+        <option value="$PROJECT_DIR$/httpServletRequest/pom.xml" />
       </list>
     </option>
   </component>

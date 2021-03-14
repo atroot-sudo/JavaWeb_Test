@@ -21,13 +21,13 @@ import java.io.IOException;
  * 1.获取web.xml中配置的上下文参数 context-param
  * 2.获取当前工程路劲
  * 3.获取工程部署后在硬盘上的绝对路径
- * 4.像Map意向存取数据
+ * 4.像Map存取数据
  */
 public class servletContext extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //获取ServletContext对象进行操作
-        //通过ServletConfig来获取  也可以通过getServletContext() 来获取
+        //通过ServletConfig来获取
         ServletContext servletContext = getServletConfig().getServletContext();
         String username = servletContext.getInitParameter("username");
         System.out.println("username 的值是：" + username);

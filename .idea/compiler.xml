@@ -9,7 +9,11 @@
         <module name="book_static" />
         <module name="HelloServlet" />
         <module name="Xml-Test" />
+        <module name="httpServletRequest" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Hello" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
