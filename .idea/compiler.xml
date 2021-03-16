@@ -6,14 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="book_static" />
-        <module name="HelloServlet" />
         <module name="Xml-Test" />
-        <module name="httpServletRequest" />
+        <module name="HelloJSP" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Hello" target="1.8" />
+      <module name="HelloJSP" target="1.8" />
+      <module name="Xml-Test" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
