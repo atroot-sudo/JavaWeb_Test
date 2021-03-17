@@ -29,7 +29,7 @@ public class servlet2 extends HttpServlet {
 
         //执行servlet2的代码
         System.out.println("执行servlet2");
-
+        
 
     }
 

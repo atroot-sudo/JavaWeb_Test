@@ -10,7 +10,7 @@
         <!--  这里是servlet-name标签 给servlet程序起一个别名 一般为类名  -->
         <servlet-name>HelloServlet</servlet-name>
         <!--    这里的servlet-class是 servlet程序的全类名-->
-        <servlet-class>com.theoldzheng.servlet.HelloServlet</servlet-class>
+        <servlet-class>src.main.servlet.HelloServlet</servlet-class>
     </servlet>
     <!--servlet-mapping 是为了给servlet程序配置访问地址-->
     <servlet-mapping>
@@ -25,7 +25,7 @@
 
     <servlet>
         <servlet-name>HelloServlet2</servlet-name>
-        <servlet-class>com.theoldzheng.servlet.HelloServlet2</servlet-class>
+        <servlet-class>src.main.servlet.HelloServlet2</servlet-class>
 
 
     </servlet>
@@ -36,16 +36,16 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>HelloServlet3</servlet-name>
-        <servlet-class>com.theoldzheng.servlet.HelloServlet3</servlet-class>
+        <servlet-class>src.main.servlet.HelloServlet3</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>ServletContext</servlet-name>
-        <servlet-class>com.theoldzheng.servlet.servletContext</servlet-class>
+        <servlet-class>src.main.servlet.servletContext</servlet-class>
 
     </servlet>
     <servlet>
         <servlet-name>servletContext2</servlet-name>
-        <servlet-class>com.theoldzheng.servlet.servletContext2</servlet-class>
+        <servlet-class>src.main.servlet.servletContext2</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>servletContext2</servlet-name>

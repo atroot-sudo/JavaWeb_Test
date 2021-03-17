@@ -1,4 +1,4 @@
-package com.theoldzheng.servlet;
+package src.main.servlet;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;

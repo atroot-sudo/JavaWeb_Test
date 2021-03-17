@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HelloJSP/HelloJSP.iml" filepath="$PROJECT_DIR$/HelloJSP/HelloJSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSP_EL/JSP_EL.iml" filepath="$PROJECT_DIR$/JSP_EL/JSP_EL.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaWeb-Test-01.iml" filepath="$PROJECT_DIR$/.idea/JavaWeb-Test-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Xml-Test/Xml-Test.iml" filepath="$PROJECT_DIR$/Xml-Test/Xml-Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uploadFile/uploadFile.iml" filepath="$PROJECT_DIR$/uploadFile/uploadFile.iml" />
     </modules>
   </component>
 </project>
