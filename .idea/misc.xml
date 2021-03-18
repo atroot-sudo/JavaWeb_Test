@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/JSP_EL/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/uploadFile/pom.xml" />
+        <option value="$PROJECT_DIR$/downLoad/pom.xml" />
+        <option value="$PROJECT_DIR$/downloadFile/pom.xml" />
       </list>
     </option>
   </component>

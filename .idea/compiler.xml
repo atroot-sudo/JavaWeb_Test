@@ -8,14 +8,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JSP_EL" />
         <module name="uploadFile" />
-        <module name="JavaWeb-Test-01" />
         <module name="Xml-Test" />
+        <module name="downLoad" />
+        <module name="JavaWeb_Test" />
         <module name="HelloJSP" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="downLoad" target="1.8" />
+      <module name="downloadFile" target="1.8" />
       <module name="HelloJSP" target="1.8" />
-      <module name="JavaWeb-Test-01" target="1.8" />
+      <module name="JavaWeb_Test" target="1.8" />
       <module name="JSP_EL" target="1.8" />
       <module name="uploadFile" target="1.8" />
       <module name="Xml-Test" target="8" />
