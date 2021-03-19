@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 /**
@@ -43,7 +44,11 @@ public class downloadServlet extends HttpServlet {
             //如果请求头中包含Firefox字样则为Firefox浏览器 使用Base64编码
             //使用Base64编码解决附件下载的中文名问题
             //Base64有编码器和解码器，需要放入要编码和解码的字符
-            BASE64Eecoder base64Encoder = new BASE64Encoder();
+            Base64.Encoder encoder = Base64.getEncoder();
+
+            String s = "attachment; fileName=" + "=?utf-8?B?" + encoder.encodeToString(downloadFile.getBytes(StandardCharsets.UTF_8)) + "?=";
+            resp.setHeader("Content-Disposition", s);
+
         }else{
             //没有则为其他浏览器  通过response来设置客户端浏览器的请求头为UTF-8
             resp.setHeader("Content-Disposition","attachment;fileName=" + URLEncoder.encode(downloadFile,"UTF-8"));

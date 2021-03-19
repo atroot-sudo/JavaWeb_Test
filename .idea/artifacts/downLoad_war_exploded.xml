@@ -15,7 +15,6 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: commons-io:commons-io:2.7" />
-          <element id="library" level="project" name="Maven: com.slzx.third:sun.misc.BASE64Decoder:1.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
