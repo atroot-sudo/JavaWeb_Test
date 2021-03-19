@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Cookie" />
         <module name="JSP_EL" />
         <module name="uploadFile" />
         <module name="Xml-Test" />
@@ -15,6 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Cookie" target="1.8" />
       <module name="downLoad" target="1.8" />
       <module name="downloadFile" target="1.8" />
       <module name="HelloJSP" target="1.8" />

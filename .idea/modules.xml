@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Cookie/Cookie.iml" filepath="$PROJECT_DIR$/Cookie/Cookie.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloJSP/HelloJSP.iml" filepath="$PROJECT_DIR$/HelloJSP/HelloJSP.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSP_EL/JSP_EL.iml" filepath="$PROJECT_DIR$/JSP_EL/JSP_EL.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaWeb_Test.iml" filepath="$PROJECT_DIR$/.idea/JavaWeb_Test.iml" />
