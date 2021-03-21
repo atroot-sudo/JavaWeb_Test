@@ -9,9 +9,9 @@
         <module name="downloadFile" />
         <module name="JSP_EL" />
         <module name="uploadFile" />
+        <module name="json_Ajax_i18n" />
         <module name="CookieAndSession" />
         <module name="Filter" />
-        <module name="Xml_Test" />
         <module name="JavaWeb_Test" />
         <module name="HelloJSP" />
       </profile>
@@ -22,6 +22,7 @@
       <module name="Filter" target="1.8" />
       <module name="HelloJSP" target="1.8" />
       <module name="JavaWeb_Test" target="1.8" />
+      <module name="json_Ajax_i18n" target="1.8" />
       <module name="JSP_EL" target="1.8" />
       <module name="uploadFile" target="1.8" />
       <module name="Xml_Test" target="8" />

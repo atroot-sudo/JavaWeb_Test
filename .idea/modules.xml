@@ -7,8 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/HelloJSP/HelloJSP.iml" filepath="$PROJECT_DIR$/HelloJSP/HelloJSP.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSP_EL/JSP_EL.iml" filepath="$PROJECT_DIR$/JSP_EL/JSP_EL.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaWeb_Test.iml" filepath="$PROJECT_DIR$/.idea/JavaWeb_Test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Xml_Test/Xml_Test.iml" filepath="$PROJECT_DIR$/Xml_Test/Xml_Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/downloadFile/downloadFile.iml" filepath="$PROJECT_DIR$/downloadFile/downloadFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/json_Ajax_i18n/json_Ajax_i18n.iml" filepath="$PROJECT_DIR$/json_Ajax_i18n/json_Ajax_i18n.iml" />
       <module fileurl="file://$PROJECT_DIR$/uploadFile/uploadFile.iml" filepath="$PROJECT_DIR$/uploadFile/uploadFile.iml" />
     </modules>
   </component>

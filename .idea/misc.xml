@@ -14,10 +14,15 @@
         <option value="$PROJECT_DIR$/downLoad/pom.xml" />
         <option value="$PROJECT_DIR$/downloadFile/pom.xml" />
         <option value="$PROJECT_DIR$/Cookie/pom.xml" />
-        <option value="$PROJECT_DIR$/Xml_Test/pom.xml" />
         <option value="$PROJECT_DIR$/Filter/pom.xml" />
+        <option value="$PROJECT_DIR$/json_Ajax/pom.xml" />
+        <option value="$PROJECT_DIR$/json_Ajax_i18n/pom.xml" />
       </list>
     </option>
+  </component>
+  <component name="ProjectResources">
+    <resource url="http://mybatis.org/dtd/mybatis-3-config.dtd" location="$PROJECT_DIR$/../../../../Maven/xml/mybatis-3-config.dtd" />
+    <resource url="http://mybatis.org/dtd/mybatis-3-mapper.dtd" location="$PROJECT_DIR$/../../../../Maven/xml/mybatis-3-mapper.dtd" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
